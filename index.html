@@ -12,10 +12,10 @@
     <header>
         <img class="logo" src="images/seu-logo.png" alt="Logo">
         <input type="text" name="" id="" placeholder="O que você está buscando?">
-        <span class="material-symbols-outlined">support_agent</span>
+        <span id="call" class="material-symbols-outlined">support_agent</span>
         <p class="contato">(61) 98605-2453</p>       
-        <nav class="menu">
-            <span class="material-symbols-outlined">Menu</span>
+        <span id="menuburguer" class="material-symbols-outlined" onclick="clickMenu()" accesskey="m">Menu</span>
+        <nav id="menuItens" class="menu">
             <a href="#" accesskey="h">HOME</a>
             <a href="menu.html" accesskey="s" >SOBRE</a>
             <a href="#">SERVIÇOS</a>
@@ -40,5 +40,14 @@
 
         </article>
     </main>
+    <script>
+        function clickMenu() {
+            if (menuItens.style.display == 'block'){
+                menuItens.style.display = 'none'
+            } else {
+                menuItens.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>

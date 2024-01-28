@@ -46,7 +46,7 @@ header > input {
     width: 150px;
 }
 
-header > span {
+header > span#call {
     position: absolute;
     right: 30px;
     top: 20px;
@@ -60,27 +60,39 @@ header > p {
 }
 
 
+header > span#menuburguer {
+    background-color: var(--cor1);   
+    color: var(--cor5);
+    display: block;
+    padding: 10px;
+    text-align: center;
+}
+
+span#menuburguer:hover {
+    background-color: var(--cor2);
+    color: white;
+    cursor: pointer;
+}
+
 header > nav {
     border-top: 1px solid rgb(223, 223, 223);
     border-bottom: 1px solid rgb(223, 223, 223);
-    
-    
     padding-top: 5px;
     height: 50px;
     font-size: 0.8em;
     text-align: center;
-}
-
-header > nav > span {
-    background-color: #962317;    
+    display: none;
 }
 
 header > nav > a {
-    color: white;
+    color: var(--cor1);
     text-decoration: none;
     padding: 10px;
 }
 
+header > nav > a:hover {
+    color: var(--cor0);
+}
 
 main {
     background-color: white;
