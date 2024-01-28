@@ -17,101 +17,96 @@
     
 }
 
-
 * {
+    font-family: var(--fonte-padrao);
     margin: 0;
     padding: 0;
-    font-family: var(--fonte-padrao);
+}
+
+body, html {
+    background-color: lightgray;
 }
 
 header {
-    height: 122px;
-    /* background-color: rgb(241, 240, 240); */
-    display: block;
+    
 }
 
-header > img.logo {
-    padding-bottom: 10px;
-    padding-left: 180px;
-    padding-top: 15px;
-    width: 200px;
+header > img {
+    padding: 20px;
+    width: 20vw;
 }
-
-header > p {
-    color: #0B3954;
-    display: inline-block;
-    padding-left: 1000px;
-    padding-top: 50px;
-    position: absolute;
-}
-
-
-header > span {
-    color: #0B3954;
-    display: inline-block;
-    padding-left: 1050px;
-    position: absolute;
-    margin-top: 20px; 
-    width: 10px;
-}
-
-header > span:hover {
-    background-color: #8c78d56e;
-}
-
 
 header > input {
     background-color: rgba(239, 239, 239, 0.8);
     border: none;
     border-radius: 5px;
-    display: inline-block;
-    margin: 40px;
-    padding: 13px;
+    padding: 10px;
     position: absolute;
-    width: 500px;
+    top: 22px;
+    width: 150px;
 }
 
-header > input:hover {
-    background-color: #8c78d56e;
+header > span {
+    position: absolute;
+    right: 35px;
+    top: 20px;
 }
+
+header > p {
+    font-size: 0.6em;
+    position: absolute;
+    right: 10px;
+    top: 45px;
+}
+
 
 header > nav {
+    border-top: 1px solid rgb(223, 223, 223);
+    border-bottom: 1px solid rgb(223, 223, 223);
+    
+    
+    padding-top: 5px;
+    height: 50px;
     font-size: 0.8em;
-    font-weight: bold;
+    text-align: center;
 }
 
-header > nav.menu {
-    border-bottom: 1px solid rgb(220, 220, 220);
-    border-top: 1px solid rgb(220, 220, 220);
-    padding: 15px;
-    padding-left: 160px;
+header > nav > span {
+    background-color: #962317;    
 }
 
-header > nav.menu > a {
+header > nav > a {
+    color: white;
     text-decoration: none;
-    color: #0B3954;
-    padding: 20px;
+    padding: 10px;
 }
 
-header > nav.menu > a:hover {
-    color: #5071D5;
-}
 
 main {
-    width: 95vw;
-    height: 65vh;
+    background-color: white;
+    border-radius: 10px;
+    margin: auto;
+    width: 90vw;
 }
 
-main > h1 {
-    margin: 50px;
+main > article {
+    margin-top: 10px;
+    padding: 10px;
 }
 
-footer {
-    background-color: black;
+main > article > h1 {
+    margin-bottom: 10px;
+}
+
+main > article > p {
+    margin-bottom: 10px;
+    text-align: justify;
+    text-indent: 20px;
+}
+
+main > article > img {
+    display: block;
+    margin: auto;
     padding: 20px;
-}
-
-footer > p {
-    color: var(--cor5);
-    text-align: center;
+    width: 30vw;
 }
