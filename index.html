@@ -3,51 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/engine_ss2.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style/sytle-mq.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <title>System</title>
+    <link rel="stylesheet" href="style/style-mq.css">
+    <title>Projeto-REV</title>
 </head>
 <body>
     <header>
-        <img class="logo" src="images/seu-logo.png" alt="Logo">
-        <input type="text" name="" id="" placeholder="O que você está buscando?">
-        <span id="call" class="material-symbols-outlined">support_agent</span>
-        <p class="contato">(61) 98605-2453</p>       
-        <span id="menuburguer" class="material-symbols-outlined" onclick="clickMenu()" accesskey="m">Menu</span>
-        <nav id="menuItens" class="menu">
-            <a href="#" accesskey="h">HOME</a>
-            <a href="menu.html" accesskey="s" >SOBRE</a>
-            <a href="menu2.html">SERVIÇOS</a>
-            <a href="#">CATÁLOGO</a>
-            <a href="#">EXPERIENCE STORE</a>
-            <a href="#">PORTFÓLIO</a>
-            <a href="#">BLOG</a>
-            <a href="#">CONTATO</a>
-            <a href="#">CLIENTES</a>
-            <a href="#">MINHA CONTA</a>
-        </nav>
+        <section class="top-header">
+            <div class="interface">
+                <div class="flex">
+                    <div class="logotipo">
+                        <img src="images/logo_s.png" alt="Logo Lone Wolf">
+                    </div>
+                    <div class="btn-menu-mobile">
+                        <button onclick="animarMenu()" id="btn-menu-mobile"><i class="bi bi-list"></i></button>
+                    </div>
+                    <div class="btn-social">
+                        <a href="#"><button><i class="bi bi-instagram"></i></button></a>
+                        <a href="#"><button><i class="bi bi-facebook"></i></button></a>
+                        <a href="#"><button><i class="bi bi-youtube"></i></button></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bottom-header" id="topo">
+            <div class="interface">
+                <div class="menu-mobile" id="menu-mobile">
+                    <nav>
+                        <ul>
+                            <li><a href="#">HOME</a></li>
+                            <li><a href="#">PRODUTOS</a></li>
+                            <li><a href="#">LOJA</a></li>
+                            <li><a href="#">SOBRE</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="menu-desk">
+                    <nav>
+                        <ul>
+                            <li><a href="#">HOME</a></li>
+                            <li class="drop-hover"><a href="#">PRODUTOS <i class="bi bi-caret-down-fill"></i></a>
+                                <div class="drop">
+                                    <a href="#">Lançamentos</a>
+                                    <a href="#">Uso interno</a>
+                                    <a href="#">Uso externo</a>
+                                </div>
+                            </li>
+                            <li><a href="#">LOJA</a></li>
+                            <li><a href="#">SOBRE</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </section>
     </header>
     <main>
-        <article>
-            <h1>Sobre nossa empresa</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque eos repudiandae maiores impedit placeat labore? In omnis facere neque exercitationem fugit. Blanditiis commodi quo delectus nam voluptatem nostrum, sapiente corrupti!</p>
-            <img src="images/seu-logo.png" alt="Logo">
-        </article>
-        <article>
-            <h2>Testando</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas optio dolorum tempora itaque ipsum odio repudiandae harum ea voluptatem. Officiis error dolorum amet voluptatem impedit sapiente nemo saepe rerum dolorem.</p>
-
-        </article>
+        <div class="logo">
+            <img src="images/logo_engine_s2.png" alt="Logotipo">
+        </div>
+        <h2>TESTANDO</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam minus dignissimos atque consequuntur cum aspernatur maxime aliquid earum saepe architecto nostrum sed neque distinctio magni vitae, eius obcaecati culpa modi.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic consequuntur veritatis quisquam delectus corrupti recusandae exercitationem atque quo ipsum odio obcaecati quos voluptatibus dicta, doloremque commodi tempora ipsa pariatur repellendus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil obcaecati fugiat nesciunt ipsum iure neque culpa, laborum illo reprehenderit debitis, aut explicabo optio modi natus cupiditate! Repudiandae porro perspiciatis odit!</p>
     </main>
-    <script>
-        function clickMenu() {
-            if (menuItens.style.display == 'block'){
-                menuItens.style.display = 'none'
-            } else {
-                menuItens.style.display = 'block'
-            }
-        }
-    </script>
+
+    <script src="animar.js"></script>
 </body>
 </html>

@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+@media print {
+    
+}
+
+@media screen and (min-width:768px) and (max-width:992px) {
+    .btn-social {display: block;}
+    .btn-menu-mobile {display: none;}
+    .menu-mobile {display: none;}
+    .menu-desk {display: block;}
+}
+
+@media screen and (min-width:992px) and (max-width: 1200px) {
+    .btn-social {display: block;}
+    .btn-menu-mobile {display: none;}
+    .menu-mobile {display: none;}
+    .menu-desk{display: block;}
+}
+
+@media screen and (min-width: 1200px) {
+    .btn-social {display: block;}
+    .btn-menu-mobile {display: none;}
+    .menu-mobile {display: none;}
+    .menu-desk {display: block;}
+}
