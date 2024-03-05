@@ -162,5 +162,5 @@ header {
 .drop-hover:hover .drop {
     border-radius: 0px 0px 10px;
     box-shadow: 2px 2px 2px #000000a6;
-    height: 130px;
+    height: 150px;
 }
