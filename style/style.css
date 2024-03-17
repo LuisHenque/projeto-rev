@@ -55,6 +55,14 @@ header {
     justify-content: space-between;
 }
 
+main {
+    padding: 20px 4%;
+}
+
+main p {
+    text-align: justify;
+}
+
 /* Estilo menu mobile */
 
 .menu-mobile {
